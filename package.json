@@ -1,0 +1,25 @@
+{
+  "name": "pizzabox",
+  "productName": "PizzaBox",
+  "version": "0.1.0",
+  "description": "PizzaBox — a tiny tabbed browser built with Electron.",
+  "main": "main.js",
+  "author": "Raffy",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac dmg",
+    "dist:dir": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "io.mailix.pizzabox",
+    "productName": "PizzaBox",
+    "files": ["main.js", "preload.js", "ui.html", "assets/**/*"],
+    "mac": {"category": "public.app-category.utilities", "target": ["dmg"]},
+    "dmg": {"title": "PizzaBox ${version}"}
+  }
+}
