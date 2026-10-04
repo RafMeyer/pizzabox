@@ -46,4 +46,4 @@ The same root `index.html` can be used as the static site content for Codeberg P
 
 ## License
 
-MIT.
+XYZ License 1.0.
